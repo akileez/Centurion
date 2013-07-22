@@ -8,14 +8,14 @@
     {
         "class": "tabset_control",
         "layer0.texture": "",
-        "layer0.tint": [30,30,30],
+        "layer0.tint": [15,15,15],
         "layer0.inner_margin": 0,
         "layer0.opacity": 1.0,
         "content_margin": 0,
         "tab_overlap":0,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 28,
+        "tab_height": 24,
         "mouse_wheel_switch": false
     },
     {
@@ -26,11 +26,11 @@
     // Tab element
     {
         "class": "tab_control",
-        "content_margin": [8,0],
+        "content_margin": 0,
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
         "layer0.texture": "",
-        "layer0.tint": [60,60,60],
+        "layer0.tint": [25,25,25],
         "layer0.inner_margin": [5, 5],
         "layer0.opacity": 1.0
     },
@@ -51,7 +51,8 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [80,80,80]
+        "layer0.tint": [61,124,149],
+        "layer0.opacity": 0.6
     },
     // Tab dirty state (close button hidden)
     {
@@ -64,7 +65,7 @@
 //
 // TAB BUTTONS
 //
-    
+
     // Tab close button
     {
         "class": "tab_close_button",
@@ -94,7 +95,7 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Theme - Centurion/Centurion/circle.png",
-        "layer0.tint": [81,166,203],
+        "layer0.tint": [61,124,149],
         "layer0.opacity": 1
     },
     {
@@ -142,13 +143,13 @@
 //
 // TAB LABELS
 //
-    
+
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [170, 170, 170],
+        "fg": [100, 100, 100],
         "shadow_color": [25, 25, 25],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [1, 2]
     },
     {
         "class": "tab_label",
@@ -170,7 +171,7 @@
     {
         "class": "fold_button_control",
         "layer0.texture": "Theme - Centurion/Centurion/arrow.png",
-        "layer0.opacity": 0.4,
+        "layer0.opacity": 0.1,
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
     },
@@ -315,7 +316,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [20,20,20],
+        "layer0.tint": [10,10,10],
         "layer0.opacity": 1
     },
 
@@ -325,8 +326,8 @@
 
     {
         "class": "grid_layout_control",
-        "border_size": 0,
-        "border_color": [40, 40, 40]
+        "border_size": 1,
+        "border_color": [25, 25, 25]
     },
 
 //
@@ -370,7 +371,7 @@
     {
         "class": "tool_tip_control",
         "layer0.texture": "",
-        "layer0.tint": [160,160,160],
+        "layer0.tint": [16,16,16],
         "layer0.inner_margin": [1, 1],
         "layer0.opacity": 1,
         "content_margin": [4, 4]
@@ -378,7 +379,7 @@
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [230, 230, 230]
+        "color": [61, 124, 149, 240]
     },
 
 //
@@ -389,9 +390,9 @@
     {
         "class": "status_bar",
         "layer0.texture": "",
-        "layer0.tint": [40,40,40],
+        "layer0.tint": [25,25,25],
         "layer0.opacity": 1.0,
-        "content_margin":4
+        "content_margin":8
     },
     // Status bar button
     {
@@ -415,7 +416,7 @@
         "class": "sidebar_container",
         "layer0.texture": "",
         "layer0.opacity": 1.0,
-        "layer0.tint": [30,30,30],
+        "layer0.tint": [10,10,10],
         "layer0.inner_margin": [1, 5, 2, 1],
         "content_margin": [0, 4, 0, 0]
     },
@@ -432,7 +433,7 @@
     {
         "class": "tree_row",
         "layer0.texture": "",
-        "layer0.tint": [100,100,100],
+        "layer0.tint": [61,124,149],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
@@ -440,7 +441,7 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.6
     },
     // Sidebar heading
     {
@@ -486,7 +487,7 @@
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [210, 210, 210],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0]
+        "shadow_offset": [1, 2]
     },
 
 //
@@ -550,14 +551,14 @@
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
         "layer0.texture": "Theme - Centurion/Centurion/folder-closed.png",
-        "layer0.tint": [90,147,94],
+        "layer0.tint": [125,125,125],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.tint":[88,186,102]
+        "layer0.tint":[81,166,203]
     },
     {
         "class": "disclosure_button_control",
@@ -584,12 +585,16 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
+        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png",
+        "layer0.tint": [61,124,149],
+        "layer0.opacity": 1,
+        "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}]
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.tint":[81,166,203]
     },
     {
         "class": "disclosure_button_control",
@@ -671,20 +676,22 @@
     {
         "class": "panel_control",
         "layer0.texture": "",
-        "layer0.inner_margin": [0,0],
+        "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1,
-        "layer0.tint": [40,40,40],
-        "content_margin": 0
+        "layer0.tint": [20,20,20],
+        "content_margin": [2, 1, 2, 1]
     },
     // Quick panel background
     {
-        "class": "overlay_control",        
+        "class": "overlay_control",
+        "layer0.tint": [20,20,20],
         "layer0.opacity": 1.0,
+        "layer0.inner_margin": [12, 6, 12, 15],
         "layer1.texture": "",
-        "layer1.tint": [60,60,60],
-        "layer1.inner_margin": [0, 0, 0, 0],
+        "layer1.tint": [20,20,20],
+        "layer1.inner_margin": [12, 40, 12, 19],
         "layer1.opacity": 1.0,
-        "content_margin": 0
+        "content_margin": 4
     },
 
 //
@@ -693,7 +700,7 @@
 
     {
         "class": "quick_panel",
-        "row_padding": 8,
+        "row_padding": [16, 4],
         "layer0.tint": [30, 30, 30],
         "layer0.opacity": 1.0,
         "dark_content": true
@@ -709,14 +716,14 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [90,147,94]
+        "layer0.tint": [61,124,149]
     },
     {
         "class": "quick_panel_label",
         "fg": [210, 210, 210, 255],
-        "match_fg": [126,221,138, 255],
+        "match_fg": [126,194,221, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [126,221,138, 255]
+        "selected_match_fg": [126,194,221, 255]
     },
     {
         "class": "quick_panel_path_label",
@@ -745,7 +752,7 @@
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [90,147,94]
+        "layer0.tint": [61,124,149]
     },
 
 //
@@ -765,14 +772,14 @@
     {
         "class": "auto_complete_label",
         "fg": [210, 210, 210, 255],
-        "match_fg": [126,221,138, 255],
+        "match_fg": [126,194,221, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [126,221,138, 255]
+        "selected_match_fg": [126,194,221, 255]
     },
     {
         "class": "table_row",
         "layer0.texture": "",
-        "layer0.tint":[86,163,102],
+        "layer0.tint":[61,124,149],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
     },
@@ -799,7 +806,7 @@
         "attributes": ["selected"],
         "layer0.texture": "",
         //"layer1.tint":[86,163,102]
-        "layer1.tint":[80,80,80]
+        "layer1.tint":[30,30,30]
     },
     // Button group left
     {
@@ -849,37 +856,43 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Centurion/Centurion/asterisk.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
 
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
     // Case sensitive search button
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Centurion/Centurion/capital.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Centurion/Centurion/quotes.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
 
@@ -891,24 +904,28 @@
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Centurion/Centurion/selection.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Centurion/Centurion/page.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
 
@@ -920,36 +937,42 @@
     {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Centurion/Centurion/reverse.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
     // Search wrap button
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Centurion/Centurion/wrap.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Centurion/Centurion/selection.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
 
@@ -961,12 +984,14 @@
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Centurion/Centurion/capital.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     },
 
@@ -978,12 +1003,14 @@
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Centurion/Centurion/highlight.png",
+        "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0.5,
-        "content_margin": 9
+        "content_margin": [9, 9]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.tint": [61, 124, 149],
         "layer0.opacity": 1
     }
 
