@@ -5,9 +5,9 @@
 	<key>author</key>
 	<string>Allan Hortle</string>
 	<key>comment</key>
-	<string>A widget theme for the UI components of the Centurion Theme</string>
+	<string>A widget theme for the UI components of the Achaean Theme</string>
 	<key>name</key>
-	<string>Centurion - Widget Theme</string>
+	<string>Achaean - Widget Theme</string>
 	<key>settings</key>
 	<array>
 		<dict>
